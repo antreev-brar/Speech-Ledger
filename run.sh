@@ -8,5 +8,7 @@ done
 mkdir dtln_out/
 python3 DTLN/run_evaluation.py -i wav/ -o dtln_out/ -m ./dtln_/pretrained_model/model.h5
 # dtln outputs stored in dtln_out folder.
-python3 Speaker-Diarization/speakerDiarization.py --wav_path ./dtln_out
+python3 Speaker-Diarization/speakerDiarization.py
+# speech diarized.
+python3 api.py
 

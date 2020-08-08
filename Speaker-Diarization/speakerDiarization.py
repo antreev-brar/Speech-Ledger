@@ -32,7 +32,7 @@ parser.add_argument('--aggregation_mode', default='gvlad', choices=['avg', 'vlad
 # set up learning rate, training loss and optimizer.
 parser.add_argument('--loss', default='softmax', choices=['softmax', 'amsoftmax'], type=str)
 parser.add_argument('--test_type', default='normal', choices=['normal', 'hard', 'extend'], type=str)
-parser.add_argument('--wav_path',default='../wav/',type=str)
+parser.add_argument('--wav_path',default='../dtln_out/',type=str)
 
 global args
 args = parser.parse_args()
