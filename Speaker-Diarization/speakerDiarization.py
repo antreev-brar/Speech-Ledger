@@ -10,6 +10,7 @@ sys.path.append('visualization')
 #import toolkits
 import model as spkModel
 import os
+import glob
 from viewer import PlotDiar
 
 # ===========================================
@@ -31,6 +32,7 @@ parser.add_argument('--aggregation_mode', default='gvlad', choices=['avg', 'vlad
 # set up learning rate, training loss and optimizer.
 parser.add_argument('--loss', default='softmax', choices=['softmax', 'amsoftmax'], type=str)
 parser.add_argument('--test_type', default='normal', choices=['normal', 'hard', 'extend'], type=str)
+parser.add_argument('--wav_path',default='dtln_out/',type=str)
 
 global args
 args = parser.parse_args()
@@ -190,7 +192,8 @@ def main(wav_path, embedding_per_second=1.0, overlap_rate=0.5):
 
             speakerSlice[spk][tid]['start'] = s
             speakerSlice[spk][tid]['stop'] = e
-
+    loudness=[]
+    audio_files=[]
     for spk,timeDicts in speakerSlice.items():
         print('========= ' + str(spk) + ' =========')
         final =0
@@ -210,9 +213,12 @@ def main(wav_path, embedding_per_second=1.0, overlap_rate=0.5):
             print(newAudio.duration_seconds)
             #print(type(newAudio))
             final += newAudio
-            
-        print(length)
-        final.export('6'+str(spk)+'.wav', format="wav")
+
+        loudness.append(final.rms)
+        # final.export(str(spk)+'.wav', format="wav")
+        audio_files.append(final)
+    loudest=np.argmax(np.array(loudness))
+    audio_files[loudest].export(wav_path+'_main'+'.wav',format=wav)
 
 
     p = PlotDiar(map=speakerSlice, wav=wav_path, gui=True, size=(25, 6))
@@ -220,5 +226,7 @@ def main(wav_path, embedding_per_second=1.0, overlap_rate=0.5):
     p.plot.show()
 
 if __name__ == '__main__':
-    main(r'wavs/6.wav', embedding_per_second=1.2, overlap_rate=0.4)
+    files=glob.glob(args.wav_path+'/*.wav',recursive=True)
+    for file in files:
+        main(file, embedding_per_second=1.2, overlap_rate=0.4)
 
