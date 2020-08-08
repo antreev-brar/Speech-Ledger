@@ -6,9 +6,12 @@ do
 done
 # audio to wav done.
 mkdir dtln_out/
-python3 DTLN/run_evaluation.py -i wav/ -o dtln_out/ -m ./dtln_/pretrained_model/model.h5
+cd DTLN
+python3 run_evaluation.py -i ../wav/ -o ../dtln_out/ -m ./pretrained_model/model.h5
+cd ..
 # dtln outputs stored in dtln_out folder.
-python3 Speaker-Diarization/speakerDiarization.py
+cd Speaker-Diarization
+python3 speakerDiarization.py
 # speech diarized.
+cd ..
 python3 api.py
-
