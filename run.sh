@@ -2,7 +2,7 @@
 # Assume file is in a folder.
 for f in $(ls $1):
 do 
-    ffmpeg -i $l/$f -ar 16000 wav/$f.wav
+    ffmpeg -i $1/$f -ar 16000 wav/$f.wav
 done
 # audio to wav done.
 mkdir dtln_out/
