@@ -154,12 +154,13 @@ class DTLN_model():
         np.random.seed(42)
         tf.random.set_seed(42)
         # some line to correctly find some libraries in TF 2.x
+        '''
         physical_devices = tf.config.experimental.list_physical_devices('GPU')
         if len(physical_devices) > 0:
             for device in physical_devices:
                 tf.config.experimental.set_memory_growth(device, enable=True)
         
-
+        '''
     @staticmethod
     def snr_cost(s_estimate, s_true):
         '''
