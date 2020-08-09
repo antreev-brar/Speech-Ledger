@@ -61,8 +61,8 @@ https://github.com/antreev-brar/FlipkartGrid
 ## Relevant Links
 * [Demonstartion in Colab](https://colab.research.google.com/drive/18cd1lg0DKLcm7ePbJ67IEWER89Bp-YR0?usp=sharing)
 * [Video Demonstration](#)
-* [Audio Clips](#)
-* [Transcripted JSON files](#)
+* [Audio Clips](https://drive.google.com/drive/folders/1PzCtO1VivCnh-Pa_QnBKvpTWxotJkPTc?usp=sharing)
+* [Transcripted JSON files](https://drive.google.com/drive/folders/1UfyjHkWE4rEfm-6cLETjHEBXNVw2n1W6?usp=sharing)
 
 ## Acknowledgments
 * [DTLN](https://github.com/breizhn/DTLN) ([*Paper*](https://arxiv.org/abs/2005.07551))
