@@ -1,7 +1,9 @@
-# Solving for Voice Interactions in Indian Houses & Neighborhoods
+# Flipkart Grid 2.0 : Software Development Challenge
+# *Solving for Voice Interactions in Indian Houses & Neighborhoods*
 <img src="assets/flipkart-grid-logo.jpg"></img>
 
 ## Contributors
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/antreev-brar"><img src="https://avatars3.githubusercontent.com/u/57298405?s=460&u=12872e3c1a80847f597ec1cde810f33b75ccbad9&v=4" width="100px;" alt=""/><br /><sub><b><i>Antreev Singh Brar</i></b></sub></a></td>
@@ -9,6 +11,10 @@
     <td align="center"><a href="https://github.com/SomTambe"><img src="https://avatars3.githubusercontent.com/u/20859602?s=460&u=b5305f8206d736e2e421c3cbb3ee2a5e0c2a0a28&v=4" width="100px;" alt=""/><br /><sub><b><i>Som Tambe</i></b></sub></a></td>
   </tr>
 </table>
+
+## Github Repository Link   
+
+https://github.com/antreev-brar/FlipkartGrid
 
 ## Usage
 * Clone the repository to 
@@ -59,5 +65,5 @@
 * [Transcripted JSON files](#)
 
 ## Acknowledgments
-* [DTLN](https://github.com/breizhn/DTLN)
-* [Speaker-Diarization](https://github.com/taylorlu/Speaker-Diarization)
+* [DTLN](https://github.com/breizhn/DTLN) ([*Paper*](https://arxiv.org/abs/2005.07551))
+* [Speaker-Diarization](https://github.com/taylorlu/Speaker-Diarization) ([*Paper1*](https://arxiv.org/pdf/1902.10107.pdf)) ([*Paper2*](https://arxiv.org/abs/1810.04719))
