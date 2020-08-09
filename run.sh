@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # mp3 to wav conversion
 pushd $1
 for i in *.mp3
