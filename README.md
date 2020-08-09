@@ -17,7 +17,7 @@
 https://github.com/antreev-brar/FlipkartGrid
 
 ## Usage
-* Clone the repository to 
+* ***Clone*** the repository to 
   * Local System:
   ```bash
   git clone https://github.com/antreev-brar/FlipkartGrid.git
@@ -26,7 +26,7 @@ https://github.com/antreev-brar/FlipkartGrid
   ```bash
   !git clone https://github.com/antreev-brar/FlipkartGrid.git
   ```
-* Install the dependencies
+* Install the ***dependencies***
   * For Windows:
   ```bash
   pip install -r requirements.txt
@@ -39,7 +39,7 @@ https://github.com/antreev-brar/FlipkartGrid
   ```bash
   !pip install -r requirements.txt
   ```
-* Execute the bash script for whole process:
+* Execute the ***bash script*** for whole process:
   * Local System:
   ```bash
   chmod u+x run.sh
@@ -57,6 +57,25 @@ https://github.com/antreev-brar/FlipkartGrid
 * **DTLN** performs noise suppression and stores processed wavs in **output** folder.
 * **Speaker-Diarization** identifies main speaker and stores audio of main speaker in **output** folder.
 * **transcription_api.py** processes each file and stores the transcriptions in **transcription** folder.
+
+## Dependencies
+```bash
+torch
+tensorflow==2.2.0-alpha0
+keras==2.3.1
+soundfile
+wavinfo
+pydub
+libasound2-dev
+portaudio19-dev 
+libportaudio2
+libportaudiocpp0
+ffmpeg
+pyaudio
+numpy
+glob
+os
+```
 
 ## Relevant Links
 * [Demonstartion in Colab](https://colab.research.google.com/drive/18cd1lg0DKLcm7ePbJ67IEWER89Bp-YR0?usp=sharing)
