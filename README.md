@@ -12,9 +12,13 @@
   </tr>
 </table>
 
-## Github Repository Link   
-
-https://github.com/antreev-brar/FlipkartGrid
+# Relevant Links
+## [Github Repository](https://github.com/antreev-brar/FlipkartGrid)
+## [Demonstration in Colab](https://colab.research.google.com/drive/18cd1lg0DKLcm7ePbJ67IEWER89Bp-YR0?usp=sharing)
+## [Video Demonstration](https://drive.google.com/drive/folders/14UxPscwj70hhByLDcherpt1AN3sDdtF9?usp=sharing)
+## [Audio Clips](https://drive.google.com/drive/folders/1PzCtO1VivCnh-Pa_QnBKvpTWxotJkPTc?usp=sharing)
+## [Transcripted JSON files](https://drive.google.com/drive/folders/1UfyjHkWE4rEfm-6cLETjHEBXNVw2n1W6?usp=sharing)
+## [Deliverable PPT : Round 2](https://docs.google.com/presentation/d/18mlHJ6BLP6DhbSu05DZqqQd9mfpXg4-DEka7q6Thi1g/edit?usp=sharing)
 
 ## Usage
 * ***Clone*** the repository to 
@@ -76,13 +80,6 @@ numpy
 glob
 os
 ```
-
-## Relevant Links
-* [Demonstartion in Colab](https://colab.research.google.com/drive/18cd1lg0DKLcm7ePbJ67IEWER89Bp-YR0?usp=sharing)
-* [Video Demonstration](https://drive.google.com/drive/folders/14UxPscwj70hhByLDcherpt1AN3sDdtF9?usp=sharing)
-* [Audio Clips](https://drive.google.com/drive/folders/1PzCtO1VivCnh-Pa_QnBKvpTWxotJkPTc?usp=sharing)
-* [Transcripted JSON files](https://drive.google.com/drive/folders/1UfyjHkWE4rEfm-6cLETjHEBXNVw2n1W6?usp=sharing)
-* [Deliverable PPT : Round 2](https://docs.google.com/presentation/d/18mlHJ6BLP6DhbSu05DZqqQd9mfpXg4-DEka7q6Thi1g/edit?usp=sharing)
 
 ## Acknowledgments
 * [DTLN](https://github.com/breizhn/DTLN) ([*Paper*](https://arxiv.org/abs/2005.07551))
