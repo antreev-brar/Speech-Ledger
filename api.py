@@ -1,5 +1,8 @@
 import requests
 import glob
+import json
+import os
+os.mkdir('transcriptions')
 
 headers = {'Authorization' : 'Token 3715119fd7753d33bedbd3c2832752ee7b0a10c7'}
 data = {'user' : '310' ,'language' : 'HI'}
@@ -11,3 +14,5 @@ for f in files:
     res = requests.post(url, headers = headers, data = data, files = file)
     print(f,end=':')
     print(res.json())
+    with open('transcriptions/'+f.split('/')[-1]+'.json','a') as jsonfile:
+        json.dump(res.json(),jsonfile)
