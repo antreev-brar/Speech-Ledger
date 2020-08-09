@@ -2,7 +2,8 @@ import requests
 import glob
 import json
 import os
-os.mkdir('transcriptions')
+try:
+    os.mkdir('transcriptions')
 
 headers = {'Authorization' : 'Token 3715119fd7753d33bedbd3c2832752ee7b0a10c7'}
 data = {'user' : '310' ,'language' : 'HI'}
