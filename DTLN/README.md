@@ -16,7 +16,6 @@ Combining these two types of signal transformations enables the DTLN to robustly
    
 ### Python dependencies:
 
-The following packages will be required for this repository:
 * TensorFlow (2.x)
 * librosa
 * wavinfo 
