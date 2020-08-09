@@ -1,7 +1,7 @@
 #!/bin/sh
 # mp3 to wav conversion
 pushd $1
-for i in *.mp3:
+for i in *.mp3
 do 
     ffmpeg -i "$i" -ar 16000 "../wav/${i%.*}.wav"
 done
