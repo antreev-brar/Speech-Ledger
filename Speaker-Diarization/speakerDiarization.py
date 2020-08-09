@@ -11,7 +11,7 @@ sys.path.append('visualization')
 import model as spkModel
 import os
 import glob
-from viewer import PlotDiar
+#from viewer import PlotDiar
 
 # ===========================================
 #        Parse the argument
