@@ -4,6 +4,8 @@ import json
 import os
 try:
     os.mkdir('transcriptions')
+except:
+    pass
 
 headers = {'Authorization' : 'Token 3715119fd7753d33bedbd3c2832752ee7b0a10c7'}
 data = {'user' : '310' ,'language' : 'HI'}

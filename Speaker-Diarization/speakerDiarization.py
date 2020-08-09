@@ -221,9 +221,9 @@ def main(wav_path, embedding_per_second=1.0, overlap_rate=0.5):
     audio_files[loudest].export(wav_path+'_main'+'.wav',format='wav')
 
 
-    p = PlotDiar(map=speakerSlice, wav=wav_path, gui=True, size=(25, 6))
-    p.draw()
-    p.plot.show()
+    # p = PlotDiar(map=speakerSlice, wav=wav_path, gui=True, size=(25, 6))
+    # p.draw()
+    # p.plot.show()
 
 if __name__ == '__main__':
     files=glob.glob(args.wav_path+'/*.wav',recursive=True)
