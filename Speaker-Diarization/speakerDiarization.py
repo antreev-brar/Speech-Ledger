@@ -32,7 +32,7 @@ parser.add_argument('--aggregation_mode', default='gvlad', choices=['avg', 'vlad
 # set up learning rate, training loss and optimizer.
 parser.add_argument('--loss', default='softmax', choices=['softmax', 'amsoftmax'], type=str)
 parser.add_argument('--test_type', default='normal', choices=['normal', 'hard', 'extend'], type=str)
-parser.add_argument('--wav_path',default='../dtln_out/',type=str)
+parser.add_argument('--wav_path',default='../output/',type=str)
 
 global args
 args = parser.parse_args()
@@ -123,7 +123,7 @@ def load_data(path, win_length=400, sr=16000, hop_length=160, n_fft=512, embeddi
         if(cur_slide + spec_len > time):
             break
         spec_mag = mag_T[:, int(cur_slide+0.5) : int(cur_slide+spec_len+0.5)]
-        
+
         # preprocessing, subtract mean, divided by time-wise var
         mu = np.mean(spec_mag, 0, keepdims=True)
         std = np.std(spec_mag, 0, keepdims=True)
@@ -229,4 +229,3 @@ if __name__ == '__main__':
     files=glob.glob(args.wav_path+'/*.wav',recursive=True)
     for file in files:
         main(file, embedding_per_second=1.2, overlap_rate=0.4)
-

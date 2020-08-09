@@ -2,6 +2,7 @@ import requests
 import glob
 import json
 import os
+
 try:
     os.mkdir('transcriptions')
 except:
