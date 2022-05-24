@@ -1,5 +1,5 @@
 torch
-tensorflow==2.2.0-alpha0
+tensorflow==2.6.4
 keras==2.3.1
 soundfile
 wavinfo
